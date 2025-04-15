@@ -1,0 +1,11 @@
+./../rtl/clk_divider.v
+./../rtl/clk_divider_debug.v
+./../rtl/clk_selector.v
+./../rtl/debounce.v
+./../rtl/display_controller.v
+./../rtl/main_clock.v
+./../rtl/cuckoo.v
+./../rtl/stopwatch.v
+./../rtl/timer.v
+./../rtl/top_clock.v
+./../rtl/tb_top_clock.v

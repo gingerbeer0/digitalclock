@@ -1,0 +1,40 @@
+################
+# Remove previous 
+# dumpfile
+################
+rm log* -rf
+rm *.fsdb -rf
+mkdir ./logs
+################
+# VCS
+################
+
+vcs  \
+-full64  \
+-debug_acc+all  \
++v2k  \
+-sverilog  \
++maxdelays  \
++sdfverbose  \
++lint=all,noVCDE  \
+-notice  \
+-line  \
+-timescale=1ms/100us \
+-l ./logs/compile.log  \
+-o simv  \
+-f list.f  \
++vcs+dumpvars+result.fsdb  \
+-t tb_top_clock  \
+-P ${VERDI_HOME}/share/PLI/VCS/linux64/novas.tab ${VERDI_HOME}/share/PLI/VCS/linux64/pli.a
+
+################
+# run simulator
+################
+./simv
+
+################
+# run verdi
+################
+
+verdi -ssf result.fsdb -f list.f
+

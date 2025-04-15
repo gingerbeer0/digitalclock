@@ -1,0 +1,144 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 11:47:04  October 11, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		top_clock_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY top_clock
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:47:04  OCTOBER 11, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_N2 -to clk_50MHz
+set_location_assignment PIN_AE14 -to debug_mode
+set_location_assignment PIN_W26 -to key3
+set_location_assignment PIN_N23 -to key_dec
+set_location_assignment PIN_P23 -to key_inc
+set_location_assignment PIN_N25 -to rst_n
+set_location_assignment PIN_V13 -to seg_data0[6]
+set_location_assignment PIN_V14 -to seg_data0[5]
+set_location_assignment PIN_AE11 -to seg_data0[4]
+set_location_assignment PIN_AD11 -to seg_data0[3]
+set_location_assignment PIN_AC12 -to seg_data0[2]
+set_location_assignment PIN_AB12 -to seg_data0[1]
+set_location_assignment PIN_AF10 -to seg_data0[0]
+set_location_assignment PIN_V20 -to seg_data1[0]
+set_location_assignment PIN_AB24 -to seg_data1[6]
+set_location_assignment PIN_AA23 -to seg_data1[5]
+set_location_assignment PIN_AA24 -to seg_data1[4]
+set_location_assignment PIN_Y22 -to seg_data1[3]
+set_location_assignment PIN_W21 -to seg_data1[2]
+set_location_assignment PIN_V21 -to seg_data1[1]
+set_location_assignment PIN_Y24 -to seg_data2[6]
+set_location_assignment PIN_AB25 -to seg_data2[5]
+set_location_assignment PIN_AB26 -to seg_data2[4]
+set_location_assignment PIN_AC26 -to seg_data2[3]
+set_location_assignment PIN_AC25 -to seg_data2[2]
+set_location_assignment PIN_V22 -to seg_data2[1]
+set_location_assignment PIN_AB23 -to seg_data2[0]
+set_location_assignment PIN_W24 -to seg_data3[6]
+set_location_assignment PIN_U22 -to seg_data3[5]
+set_location_assignment PIN_Y25 -to seg_data3[4]
+set_location_assignment PIN_Y26 -to seg_data3[3]
+set_location_assignment PIN_AA26 -to seg_data3[2]
+set_location_assignment PIN_AA25 -to seg_data3[1]
+set_location_assignment PIN_Y23 -to seg_data3[0]
+set_location_assignment PIN_T3 -to seg_data4[6]
+set_location_assignment PIN_R6 -to seg_data4[5]
+set_location_assignment PIN_R7 -to seg_data4[4]
+set_location_assignment PIN_T4 -to seg_data4[3]
+set_location_assignment PIN_U2 -to seg_data4[2]
+set_location_assignment PIN_U1 -to seg_data4[1]
+set_location_assignment PIN_U9 -to seg_data4[0]
+set_location_assignment PIN_R3 -to seg_data5[6]
+set_location_assignment PIN_R4 -to seg_data5[5]
+set_location_assignment PIN_R5 -to seg_data5[4]
+set_location_assignment PIN_T9 -to seg_data5[3]
+set_location_assignment PIN_P7 -to seg_data5[2]
+set_location_assignment PIN_P6 -to seg_data5[1]
+set_location_assignment PIN_T2 -to seg_data5[0]
+set_location_assignment PIN_M4 -to seg_data6[6]
+set_location_assignment PIN_M5 -to seg_data6[5]
+set_location_assignment PIN_M3 -to seg_data6[4]
+set_location_assignment PIN_M2 -to seg_data6[3]
+set_location_assignment PIN_P3 -to seg_data6[2]
+set_location_assignment PIN_P4 -to seg_data6[1]
+set_location_assignment PIN_R2 -to seg_data6[0]
+set_location_assignment PIN_N9 -to seg_data7[6]
+set_location_assignment PIN_P9 -to seg_data7[5]
+set_location_assignment PIN_L7 -to seg_data7[4]
+set_location_assignment PIN_L6 -to seg_data7[3]
+set_location_assignment PIN_L9 -to seg_data7[2]
+set_location_assignment PIN_L2 -to seg_data7[1]
+set_location_assignment PIN_L3 -to seg_data7[0]
+set_location_assignment PIN_N26 -to sw_set
+set_location_assignment PIN_P25 -to sw_stopwatch
+set_location_assignment PIN_AE12 -to led16
+set_location_assignment PIN_AD12 -to led17
+set_location_assignment PIN_V2 -to sw_london
+set_location_assignment PIN_V1 -to sw_ny
+set_location_assignment PIN_U4 -to sw_12_24
+set_location_assignment PIN_AE22 -to ledg0
+set_location_assignment PIN_G26 -to key_start
+set_location_assignment PIN_AF14 -to sw_timer
+set_location_assignment PIN_B4 -to AUD_BCLK
+set_location_assignment PIN_A4 -to AUD_DACDAT
+set_location_assignment PIN_C6 -to AUD_DACLRCK
+set_location_assignment PIN_A5 -to AUD_XCK
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name REMOVE_REDUNDANT_LOGIC_CELLS OFF
+set_global_assignment -name AUTO_RESOURCE_SHARING OFF
+set_global_assignment -name VERILOG_FILE rtl/top_clock.v
+set_global_assignment -name VERILOG_FILE rtl/timer.v
+set_global_assignment -name VERILOG_FILE rtl/stopwatch.v
+set_global_assignment -name VERILOG_FILE rtl/main_clock.v
+set_global_assignment -name VERILOG_FILE rtl/display_controller.v
+set_global_assignment -name VERILOG_FILE rtl/debounce.v
+set_global_assignment -name VERILOG_FILE rtl/cuckoo.v
+set_global_assignment -name VERILOG_FILE rtl/CLKGEN1M.v
+set_global_assignment -name VERILOG_FILE rtl/clk_selector.v
+set_global_assignment -name VERILOG_FILE rtl/clk_divider_debug.v
+set_global_assignment -name VERILOG_FILE rtl/clk_divider.v
+set_global_assignment -name SDC_FILE top_clock.sdc
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
